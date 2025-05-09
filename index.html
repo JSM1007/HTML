@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="./css/style_login.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="sidebar">
+              <ul>
+                <li><a href="./html/flexbox.html">4주차 강의 flex box</a></li>
+                <li><a href="./html/flexbox2.html">4주차 강의실습</a></li>
+                <li><a href="6.html">5주차 강의</a></li>
+                <li><a href="7.html">6주차 강의</a></li>
+              </ul>
+            </aside>
+
+        <section class="Login-form">
+        <h1>LG TWINS</h1>
+        
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">USER NAME</label>
+
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <label for="pw">PASS WORD</label>
+            </div>
+            <div class="btn-area">
+                <button type="submit">LOGIN</button>
+
+            </div>
+        </form>
+        <div class="caption">
+            <a href="">Forgot password</a>
+        </div>
+
+
+
+
+
+        </section> 
+        
+        <script>
+            let id = $('#id');
+            let pw = $('#pw');
+            let btn = $('button');
+
+            $(btn).on('click', function() {
+                if($(id).val() == "") {
+                    $(id).next('label').addClass('warning');
+                    setTimeout(function(){
+                        $('label').removeClass('warning');
+                    },1500);
+                }
+                else if($(pw).val() == "") {
+                    $(pw).next('label').addClass('warning');
+                    setTimeout(function(){
+                        $('label').removeClass('warning');
+                    },1500);
+            }});
+
+
+        </script>
+
+
+    </body>
+</html>

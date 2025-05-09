@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.index_btn{
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    width: 400px;
+    height: 50px;
+    background-color: rgba(224, 14, 14, 0.815);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.index{
+    text-align: center;
+}
+.index_btn:hover{
+    background-color: rgba(255, 50, 50, 0.9);
+    transition: background-color 0.5s ease;
+}
+.flex-text{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(224, 14, 14, 0.815);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-container {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #60B99A;
+  }
+  
+  .flex-item {
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background: #4584b1;
+    font-size: 30px;
+  }
+
+  .flex-container_left {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #60B99A;
+  }
+  
+  .flex-item_left {
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background: #4584b1;
+  }
